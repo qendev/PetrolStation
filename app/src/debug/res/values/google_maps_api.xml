@@ -23,8 +23,8 @@
 
     <!--google console petrol station-->
     <!--for google petrol station by me -->
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAiKSQQt83C7rUB8FYMTyULUzasBzgiDZE</string>
-    <string name="browser_key">AIzaSyBsJyAKr9zTWqlAiLwdmI-u7vIqnu-_hg0</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCEg4XI-37-udR-NIsibQxGerUf31fCcpw</string>
+    <string name="browser_key">AIzaSyCEg4XI-37-udR-NIsibQxGerUf31fCcpw</string>
 
     <!--for google petrol station -->
     <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDPotj9vUALqbNMd2fMM0WlAYAmj75aDO4</string>-->

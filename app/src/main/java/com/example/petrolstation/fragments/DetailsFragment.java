@@ -3,14 +3,7 @@ package com.example.petrolstation.fragments;
 import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -21,6 +14,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.petrolstation.R;
 import com.example.petrolstation.adapter.FuelPriceViewAdapter;
 import com.example.petrolstation.database.DatabaseHelper;
@@ -29,6 +30,7 @@ import com.example.petrolstation.models.FuelPrice;
 import com.example.petrolstation.utils.Utils;
 import com.example.petrolstation.web.scarping.GetFuelPrices;
 import com.example.petrolstation.web.scarping.parser.ParserResponseInterface;
+import com.google.android.material.snackbar.Snackbar;
 
 import org.jsoup.nodes.Document;
 
@@ -113,7 +115,7 @@ public class DetailsFragment extends Fragment {
 
         // Changing action button text color
         View sbView = snackbar.getView();
-        TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+        TextView textView = (TextView) sbView.findViewById(R.id.snackbar_text);
         textView.setTextColor(Color.YELLOW);
         snackbar.show();
     }
@@ -253,7 +255,7 @@ public class DetailsFragment extends Fragment {
 
                     // Changing action button text color
                     View sbView = snackbar.getView();
-                    TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+                    TextView textView = (TextView) sbView.findViewById(R.id.snackbar_text);
                     textView.setTextColor(Color.YELLOW);
                     snackbar.show();
                 }

@@ -1,15 +1,16 @@
 package com.example.petrolstation;
 
 import android.graphics.Color;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.petrolstation.adapter.FuelPriceViewAdapter;
 import com.example.petrolstation.listener.RecyclerTouchListener;
@@ -17,6 +18,7 @@ import com.example.petrolstation.models.FuelPrice;
 import com.example.petrolstation.utils.Utils;
 import com.example.petrolstation.web.scarping.GetFuelPrices;
 import com.example.petrolstation.web.scarping.parser.ParserResponseInterface;
+import com.google.android.material.snackbar.Snackbar;
 
 import org.jsoup.nodes.Document;
 
@@ -120,7 +122,7 @@ public class DetailsActivity extends AppCompatActivity {
 
             // Changing action button text color
             View sbView = snackbar.getView();
-            TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+            TextView textView = (TextView) sbView.findViewById(R.id.snackbar_text);
             textView.setTextColor(Color.YELLOW);
             snackbar.show();
         }
